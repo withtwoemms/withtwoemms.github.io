@@ -40,12 +40,25 @@ body {
   background: tomato;
 }
 
+aside#sidebar {
+  height: 100%;
+  width: 50%;
+  float: left;
+  background: aquamarine url("img/field_museum_totem.png");
+  background-size: cover;
+}
+
+aside#sidebar #backdrop {
+  height: 100%;
+}
+
 main.content {
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: orange;
   padding: 20px 0 0 0;
   position: relative;
+  float: right;
 }
 
 main.content article {
@@ -135,6 +148,7 @@ footer {
   display: table;
   box-shadow: 0 0 10px 0 #888;
   background: lightseagreen;
+  z-index: 10;
 }
 
 footer nav {
