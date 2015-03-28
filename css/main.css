@@ -40,16 +40,15 @@ body {
   background: tomato;
 }
 
-aside#sidebar {
+div#sidebar {
   height: 100%;
   width: 50%;
   float: left;
-  background: aquamarine url("img/field_museum_totem.png");
-  background-size: cover;
-}
-
-aside#sidebar #backdrop {
-  height: 100%;
+  background: #999; /* url(http://withtwoemms.github.io/img/field_museum_totem.png) no-repeat; /* consider 'aquamarine' as alternative*/
+  background-size: 70% auto;
+  background-position: center center;
+  padding: 20px 0 0 0;
+  margin-bottom: 100px;
 }
 
 main.content {
@@ -57,6 +56,7 @@ main.content {
   height: 100%;
   background: orange;
   padding: 20px 0 0 0;
+  margin-bottom: 100px;
   position: relative;
   float: right;
 }
@@ -67,9 +67,11 @@ main.content article {
 }
 
 /* CODE BOXES */
-
 span.line {
   background: #666;
+  font-family: courier;
+  padding: 5px;
+  margin: 2px;
 }
 
 /**************** 
