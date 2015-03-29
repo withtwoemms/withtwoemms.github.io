@@ -1,66 +1,31 @@
 <!DOCTYPE html>
+<head>
+  <title>bloggity blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
 
-<!-- this template refers to assets located in my withtwoemms.github.io directory where which another copy lives -->
-<html>
-  <head>
-    <title>E/IO >> BLOG</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css"></link>
-  </head>
-  <body>
+<main>
+  <h1>So I'm a 'Dev Bootcamper' now</h1>
+  <h2>What that means and how I feel about it</h2>
+  <h4>March 22nd 2015</h4>
+  <hr>
 
-      <!--HEADER: holds logo and navigation-->
-      <header>
-        <nav id="logo-container">
-          <a id="logo" href="../index.html">
-            <!--h1>LOGO</h1-->
-            <img src="../img/wolf_icon_transparent.png">
-          </a>
-        </nav>
-        <nav id="nav-container">
-          <ul>
-            <li><a href="../projects.html">PROJECTS</a></li>
-            <li><a href="../blog.html">BLOG</a></li>
-            <li><a href="../about.html">ABOUT</a></li>
-            <li><a href="../contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <!--SIDEBAR: globally relevant info: my pic, short bio, etc.-->
-      <div id="sidebar-left">
-      </div>
-
-      <!--MAIN: holds content like articles; asides-->
-      <main class="content">
-        <article id="a1">
-          <p>
+  <section>
+    <p>
     I am excited about <a href="http://devbootcamp.com/learn-ruby-javascript/overview/">Dev bootcamp</a>. What I care most about is what I call the <em>agnostic stuff</em>. I look foward to knowing the best practices in databising information and delivering it to users. The MVC (model, view, controller) paradigm is central in that pursuit. Algorithms also interest me. I want to use the massive resource that are DBC instructors and fellow students to build incarnations of regression algorithms like recommendation engines that aid decision-making in 'big data' applications.
-          </p>
-          <h3>Any expectations?</h3>
-          <p>
+    </p>
+    <h3>Any expectations?</h3>
+    <p>
     I imagine this experience like one of those old martial arts movies: me a 'grasshopper' seeking guidance from a wise and white-bearded sensei. I am not afraid of the "<a href="http://en.wikipedia.org/wiki/Shoshin">beginner's mind</a>". I live in it. I have so many notions about how different programming concepts can be pieced together. This is the reason I decided to join DBC: to see what the limit of those posibilities is. Learning the limits will entrain my creativity towards productive programming. When it comes to fellow students in the dojo, I hope to train hard and 'spar' with them--hopefully over beers.
-          </p>
-          <h3>How do I envision my involvement?</h3>
-          <p>
+    </p>
+    <h3>How do I envision my involvement?</h3>
+    <p>
     To my fellow bootcampers: please be prepared to hear me ask very obscure questions. I don't ask about whether a single staged file can be 'hard reset' to fluff my feathers, I ask because I genuinely want to know. To that end I am preparing a robust system, toolset, and workflow so I won't be afraid of breaking things (and so can avoid asking those obscure questions :). I am still nonetheless very curious about how <em>all</em> the piecies fit together. I believe that if I know web development in an agnostic sense then I will be able to apply it to <a href="http://en.wikipedia.org/wiki/System_programming">systems programming</a>. I will endeavor to be helpful where I can, but that while kind, I am in this to learn. I will pursue social engagment through intellectual pursuit.
-          </p>
-        </article>
-      </main>
-
-      <!--SIDEBAR: globally relevant info: my pic, short bio, etc.-->
-      <div id="sidebar-right">
-      </div>
-
-      <!--FOOTER: a place for copyright; navigation-->
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="../blog.html">&lt; all posts</a></li> 
-            <li>Handcrafted by Emmanuel I. Obi &copy; 2015</li>  
-            <li><a href="#logo">Back to the top ^</a></li>  
-          </ul>
-        </nav>
-      </footer>
-
-  </body>
-</html>
+    </p>
+  </section>
+  <hr>
+  <p>
+  To talk DBC expectations, hit me on twitter <a href="https://twitter.com/withtwoemms">@withtwoemms</a>.
+  </p>
+</main>

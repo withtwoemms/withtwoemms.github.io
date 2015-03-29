@@ -93,6 +93,10 @@ main.content article {
   text-align: justify;
 }
 
+main.content ul li {
+  list-style: none;
+}
+
 /* CODE BOXES */
 span.line {
   background: #666;

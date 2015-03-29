@@ -1,38 +1,17 @@
 <!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
 
-<!-- this template refers to assets located in my withtwoemms.github.io directory where which another copy lives -->
-<html>
-  <head>
-    <title>E/IO >> BLOG</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css"></link>
-  </head>
-  <body>
+<main>
+  <h1>#gitit</h1>
+  <h2>My first learnings in the ways of git</h2>
+  <h4>March 22nd 2015</h4>
+  <hr>
 
-      <!--HEADER: holds logo and navigation-->
-      <header>
-        <nav id="logo-container">
-          <a id="logo" href="../index.html">
-            <!--h1>LOGO</h1-->
-            <img src="../img/wolf_icon_transparent.png">
-          </a>
-        </nav>
-        <nav id="nav-container">
-          <ul>
-            <li><a href="../projects.html">PROJECTS</a></li>
-            <li><a href="../blog.html">BLOG</a></li>
-            <li><a href="../about.html">ABOUT</a></li>
-            <li><a href="../contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <!--SIDEBAR: globally relevant info: my pic, short bio, etc.-->
-      <div id="sidebar-left">
-      </div>
-
-      <!--MAIN: holds content like articles; asides-->
-      <main class="content">
-        <article id="a1">
+  <section>
     <p>
       I have limited experience with git, but am beginning to unravel it's inner workings. So then begins my wrestiling with this prolific command line tool...
     </p>
@@ -46,23 +25,9 @@
     <p>
     ...for the answer to that question, tune in next time!
     </p>
-        </article>
-      </main>
-
-      <!--SIDEBAR: globally relevant info: my pic, short bio, etc.-->
-      <div id="sidebar-right">
-      </div>
-
-      <!--FOOTER: a place for copyright; navigation-->
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="../blog.html">&lt; all posts</a></li> 
-            <li>Handcrafted by Emmanuel I. Obi &copy; 2015</li>  
-            <li><a href="#logo">Back to the top ^</a></li>  
-          </ul>
-        </nav>
-      </footer>
-
-  </body>
-</html>
+  </section>
+  <hr>
+  <p>
+  ...Meanwhile, hit me on twitter <a href="https://twitter.com/withtwoemms">@withtwoemms</a> and start a convo using the hashtag #gitit if you have any insights or tips on using git.
+  </p>
+</main>
