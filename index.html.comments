@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E/IO >> PROJECTS</title>
+    <title>E/IO</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"></link>
   </head>
   <body>
@@ -34,10 +34,16 @@
           <h1>Hello, World!</h1>
           <hr>
           <p>
-            This is my projects page.
+            This is my personal page.
           </p>
+          <br>    
           <p>
-          <a href="img/the_internet_040415.svg">This</a> is how I think the Internet works.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article id="a2">
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </article>
       </main>
@@ -57,5 +63,7 @@
         </nav>
       </footer>
 
+      <script src="js/main.js"><script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </body>
 </html>

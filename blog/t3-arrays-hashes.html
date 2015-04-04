@@ -31,12 +31,31 @@
       <!--MAIN: holds content like articles; asides-->
       <main class="content">
         <article id="a1">
-  <h1>List &sub; Array &sub; Hash</h1>
-  <h4>April 2nd 2015</h4>
-  <hr>
-    <p>
-    <!-- Create examples of why you would use one over the other. Imagine presenting these structures to people who know nothing about programming. -->
-    </p>
+          <h1>List &sup; Array &sup; Hash</h1>
+          <h4>April 2nd 2015</h4>
+          <hr>
+          <!-- Create examples of why you would use one over the other. Imagine presenting these structures to people who know nothing about programming. -->
+          <p>
+          Let's keep things simple: a hash is a type of array and an array is a type of list. A list is a <em>sequence</em> of values. The emphasis there is important to the foundational notion of a list. That is, a list is a collection of values in some <em>specified order</em>. Watch this:
+            <div class="code-insert">
+              <ol class="code-block">
+                <li class="line">1, 2, 3, 4</li>
+                <!--li class="line lighter">1, 2, 3, 4</li>
+                <li class="line">1, 2, 3, 4</li-->
+              </ol>
+              <aside>[Fig. 1: This is a test caption</aside>
+            </div>
+          ...and *BAM*: list. Simple as that. I only added the commas for readability. The sequence listed is still a list sans commas. The commas are reading aids called "delimiters" that help to separate the different values (a space is also one of these). This is a very convenient example where the collected elements just happen to be in order. Note that this collection would still be a list if the elements were <b>not</b> in numerical order. For instance:
+            <div class="code-insert">
+              <ol class="code-block">
+                <li class="line">3, 1, 4, 2</li>
+              </ol>
+              <aside>Fig. 2: Numerical order doesn't matter</aside>
+            </div>
+            This is so because the <em>sequence</em> actually refers to the notion that each element has something <em>before</em> and <em>after</em> it. Both examples fulfill that requirement regardless of ordering by value. 
+          <p>
+            
+          </p>  
         </article>
       </main>
 
