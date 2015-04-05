@@ -6,6 +6,8 @@
   </head>
   <body>
 
+    <div id="content-container">
+
       <!--HEADER: holds logo and navigation-->
       <header>
         <nav id="logo-container">
@@ -36,26 +38,67 @@
           <hr>
           <!-- Create examples of why you would use one over the other. Imagine presenting these structures to people who know nothing about programming. -->
           <p>
-          Let's keep things simple: a hash is a type of array and an array is a type of list. A list is a <em>sequence</em> of values. The emphasis there is important to the foundational notion of a list. That is, a list is a collection of values in some <em>specified order</em>. Watch this:
+          Let's keep things simple: a hash is a type of array and an array is a type of list. A <b>list</b> is a <em>sequence</em> of values. The emphasis there is important to the foundational notion of a list. That is, a list is a collection of values in some <em>specified order</em>. Watch this:
             <div class="code-insert">
               <ol class="code-block">
                 <li class="line">1, 2, 3, 4</li>
                 <!--li class="line lighter">1, 2, 3, 4</li>
                 <li class="line">1, 2, 3, 4</li-->
               </ol>
-              <aside>[Fig. 1: This is a test caption</aside>
+              <aside>Fig. 1: A list is a sequence of values</aside>
             </div>
-          ...and *BAM*: list. Simple as that. I only added the commas for readability. The sequence listed is still a list sans commas. The commas are reading aids called "delimiters" that help to separate the different values (a space is also one of these). This is a very convenient example where the collected elements just happen to be in order. Note that this collection would still be a list if the elements were <b>not</b> in numerical order. For instance:
+            ...and *BAM*: list. Simple as that. I only added the commas for readability. The sequence listed is still a list sans commas. The commas are reading aids called "delimiters" that help to separate the different values (a space is also one of these). This is a very convenient example where the collected elements just happen to be in order. Note that this collection would still be a list if the elements were <em>not</em> in numerical order. For instance:
             <div class="code-insert">
               <ol class="code-block">
                 <li class="line">3, 1, 4, 2</li>
               </ol>
               <aside>Fig. 2: Numerical order doesn't matter</aside>
             </div>
-            This is so because the <em>sequence</em> actually refers to the notion that each element has something <em>before</em> and <em>after</em> it. Both examples fulfill that requirement regardless of ordering by value. 
+            This is so because the <em>sequence</em> actually refers to the notion that each element has something <em>before</em> and <em>after</em> it. Both examples fulfill the definition of a sequence regardless of ordering by value. Plain ol' list implementations have a "push" and a "pop" method defined in the very least. These methods, allow for access to list elements by adding to or removing from the end of the list, respectively. Such a list is colloqially called a <em>stack</em> as the last item in is the first item out---like a stack of paper, but I digress..  
           <p>
-            
+          Let's talk about something more applicable... 
           </p>  
+          <p>
+          An <b>array</b> is a list whereby elements of the list can be accessed by an index. That is, elements have an identifying digit that, when referenced, can by used to return the element itself. This type of element access is called "random access" since element-getting is not only sequential. In Ruby, as in many other languages, that index begins with 0. This is so-called "0-based numbering." The access operator for retrieving an array element is typically a method of the form: [<em>index</em>]. Calling such a method gives the following: 
+            <div class="code-insert">
+              <ol class="code-block">
+                <li class="line">array = Array.[](3,1,4,2) <span class="comment">[3,1,4,2]</span></li>
+                <li class="line lighter">array.[](0) <span class="comment">3</span></li>
+                <li class="line">array.[](2) <span class="comment">4</span></li>
+              </ol>
+              <aside>Fig. 3: Array instantiation and access</aside>
+            </div>
+          In Fig. 3, an array is first created and then the 0th and 2nd elements are accessed.  
+            <div class="code-insert">
+              <ol class="code-block">
+                <li class="line">array = [3,1,4,2] <span class="comment">[3,1,4,2]</span></li>
+                <li class="line lighter">array[0] <span class="comment">3</span></li>
+                <li class="line">array.[2] <span class="comment">4</span></li>
+              </ol>
+              <aside>Fig. 4: Alternate (simpler) way of creating and accessing arrays</aside>
+            </div>
+          </p> 
+          <p>
+          From the rather boring list, to the more agile array, it can be seen that much convenience is gained by allowing random access to a elements within a collection. The wanted value can be retrieved without having to manipulate the collection. Great. Cool. There's more. The integer indicies used to access values in an array don't convey a lot of meaning. What if values in the array represented somthing like the 'number of items in a grocery cart'? Instead of the indicies that are associated with each value, other objects--strings in this instance--can be used to refer to each value. Such an array is known as an <em>associative</em> array because some piece of identifying information is associated with each value. 
+            <div class="code-insert">
+              <ol class="code-block">
+                <li class="line">hash = Hash.new <span class="comment">{}</span></li>
+                <li class="line lighter">hash.store("apples",3)</li>
+                <li class="line">hash.store("onion",1)</li>
+                <li class="line lighter">hash.store("bananas",4)</li>
+                <li class="line">hash.store("oranges",2)</li>
+                <li class="line lighter">hash["apples"].assoc <span class="comment">["apples",3]</span></li>
+                <li class="line">hash["onion"]<span class="comment">1</span></li>
+                <li class="line lighter">hash.keys <span class="comment">["apples","bananas","onion","oranges"]</span></li>
+                <li class="line">hash.values <span class="comment">[3,1,4,2]</span></li>
+              </ol>
+              <aside>Fig. 5: A "hash" is an associatve array. *NOTE* <a href="http://ruby-doc.org/core-2.2.0/Hash.html">the simpler notation</a></aside>
+            </div>
+            The piece of identifying information that allows access to a value is called a <em>key</em>. In this respect, the index of an array element is a key and so too are the food item names used in Fig. 5. Deep down in the definition of an accociative array, there is a special function that connects a key to its value. This function is known as a <b>hash function</b>, hence the monicker "hash" for associative array.
+          </p> 
+          <p>
+          In ruby, implementation of a list data structure is the array. These are good for storing values to which random (or sequential) access is needed. Such as when the units of data are reflected within the program--e.g. collecting sensor output every 5 milliseconds. In such a scenario, each extracted value can be related to every other. The hash is useful when this is not the case such as in marking an event. This allows that event to referenced uniquely. For example, if the sensor is only triggered to record when something happens. The hash can then be used to store the time of the event and the value. 
+          </p>
         </article>
       </main>
 
@@ -73,6 +116,8 @@
           </ul>
         </nav>
       </footer>
+
+    </div>
 
   </body>
 </html>

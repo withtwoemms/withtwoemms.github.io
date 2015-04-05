@@ -40,6 +40,10 @@ body {
   background: tomato;
 }
 
+div#content-container {
+  display: table;
+}
+
 div#sidebar-left {
   height: 100%;
   width: 30%;
@@ -48,7 +52,7 @@ div#sidebar-left {
   background-size: cover;
   background-position: center center;
   padding: 20px 0 0 0;
-  margin-bottom: 100px;
+  display: table-cell;
 }
 
 div#sidebar-right {
@@ -57,10 +61,10 @@ div#sidebar-right {
   float: right;
   background: #999;
   padding: 20px 0 0 0;
-  margin-bottom: 100px;
   text-align: center;
+  display: table-cell;
 }
-
+/*
 div#sidebar-right aside {
   height: 20%;
   width: 80%;
@@ -69,23 +73,24 @@ div#sidebar-right aside {
   margin: 40px auto;
   overflow: hidden;
   box-shadow: inset 0 0 10px 0 #222;
+  display: table-cell;
 }
 
 div#sidebar-right aside p {
   margin: 20px;
 }
-
+*/
 main.content {
   width: 50%;
   height: 100%;
   background: orange;
   padding: 20px 0 0 0;
-  margin-bottom: 100px;
   position: relative;
   float: left;
   z-index: 8;
   box-shadow: 0 0 10px 0 #888;
   overflow: scroll;
+  display: table-cell;
 }
 
 main.content article {
@@ -108,17 +113,27 @@ main.content ul li {
 
 /* CODE BOXES */
 div.code-insert {
-  margin: 20px 100px;
+  margin: 20px 10%;
 }
 ol.code-block {
   background: #999;
   font-family: courier;
   padding: 5px;
   margin: 2px;
+  text-align: left;
+  white-space: nowrap;
 }
 li.line {
   list-style-type: decimal-leading-zero;
   background: #bbb;
+  overflow-x: scroll;
+  overflow-y: none;
+}
+li.line span.comment {
+  color: blue;
+}
+li.line span.comment:before {
+  content: "# ";
 }
 li.line.lighter {
   background: #ddd;
