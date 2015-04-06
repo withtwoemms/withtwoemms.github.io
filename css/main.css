@@ -140,16 +140,16 @@ main.content ul li {
   list-style: none;
 }
 
-main.content #blog-nav {
+main.content .link-nav {
   margin-top: 40px;
 }
 
-main.content #blog-nav li {
+main.content .link-nav li {
   list-style: none;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
-main.content #blog-nav li a:hover {
+main.content .link-nav li a:hover {
   box-shadow: inset 0 0 3px;
   background: #bbb;
 }
