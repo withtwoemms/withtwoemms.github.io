@@ -29,6 +29,14 @@ TESTING
 */
 
 /**************** 
+FONTS
+*****************/
+@font-face{
+  font-family: modern-serif;
+  src: url('../font/ModernSerifEroded.ttf') format('truetype');
+}
+
+/**************** 
 GENERAL 
 *****************/
 html, body {
@@ -36,8 +44,14 @@ html, body {
 } 
 
 body {
+  font-family: verdana;
   margin: 0;
   background: tomato;
+}
+
+h1 {
+  font-family: modern-serif;;
+  font-size: 1.5em;
 }
 
 div#content-container {
@@ -203,11 +217,57 @@ header #nav-container ul li a {
   padding: 5px 0;
   float: left;
   font-size: 100%;
+  text-decoration: none;
+}
+
+header #nav-container ul li a:hover {
+  background: orange;
+}
+header #nav-container ul li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+div#hero {
+  background: url(../img/ashland_station_1.jpg); 
+  background: no-repeat;
+  margin-bottom: -20px;
+}
+div#hero img {
+  width: 100%;
+}
+div#hero a:visited {
+  border-color: inherit;
+  outline: none;
 }
 
 /**************** 
 FOOTER 
 *****************/
+#selfie {
+  height: 150px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  border: 4px solid;
+  z-index: 20;
+}
+
+div#text-logo {
+  font-family: modern-serif;
+  font-size: 3em;
+  display: table-cell;
+  vertical-align: middle;
+  width: 31%;
+}
+
+div#text-logo-spacer {
+  content: " ";
+  width: 11%;
+  display: table-cell;
+}
+
 footer {
   height: 100px;
   width: 100%;
@@ -224,6 +284,7 @@ footer nav {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
+  width: 58%;
 }
 
 footer nav ul {
@@ -239,3 +300,12 @@ footer nav ul li {
   /* margin: 0 1%; */
   box-shadow: 0 0 10px 0 orange;
 }
+
+footer nav ul li a:hover {
+  background: orange;
+}
+footer nav ul li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
