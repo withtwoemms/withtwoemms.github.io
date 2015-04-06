@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
   background: transparent; 
 }
 
+a {
+  color: initial;
+}
+
+a:visited {
+  color: initial;
+}
+
 /**************** 
 TESTING
 *****************/
@@ -252,20 +260,27 @@ FOOTER
   padding: 10px;
   border: 4px solid;
   z-index: 20;
+  background: rgba(238,232,170,0.5);
 }
 
 div#text-logo {
-  font-family: modern-serif;
+  /* font-family: modern-serif;
   font-size: 3em;
   display: table-cell;
   vertical-align: middle;
-  width: 31%;
+  width: 31%; */
+  display: block;
+  position: fixed;
+  bottom: 23px;
+  left: 142px;
+  font-family: modern-serif;
+  font-size: 3em;
 }
 
 div#text-logo-spacer {
-  content: " ";
+  /* content: " ";
   width: 11%;
-  display: table-cell;
+  display: table-cell; */
 }
 
 footer {
@@ -301,6 +316,9 @@ footer nav ul li {
   box-shadow: 0 0 10px 0 orange;
 }
 
+footer nav ul li a {
+  text-decoration: none;
+}
 footer nav ul li a:hover {
   background: orange;
 }
@@ -308,4 +326,7 @@ footer nav ul li a:visited {
   text-decoration: none;
   color: inherit;
 }
-
+footer nav#to-top {
+  color: inherit;
+  text-decoration: none;
+}
