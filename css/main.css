@@ -129,8 +129,29 @@ main.content article img {
   margin: 30px 20px;
 }
 
+main.content article a {
+  background: #eee;
+  box-shadow: 0 0 3px;
+  padding: 2px;
+  text-decoration: none;
+}
+
 main.content ul li {
   list-style: none;
+}
+
+main.content #blog-nav {
+  margin-top: 40px;
+}
+
+main.content #blog-nav li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+main.content #blog-nav li a:hover {
+  box-shadow: inset 0 0 3px;
+  background: #bbb;
 }
 
 /* CODE BOXES */
@@ -309,11 +330,7 @@ footer nav ul {
 }
 
 footer nav ul li {
-  background: #e5e5e5;
-  padding: 5px;
   display: inline-block;
-  /* margin: 0 1%; */
-  box-shadow: 0 0 10px 0 orange;
 }
 
 footer nav ul li a {
@@ -326,7 +343,16 @@ footer nav ul li a:visited {
   text-decoration: none;
   color: inherit;
 }
-footer nav#to-top {
+footer nav #to-top {
   color: inherit;
   text-decoration: none;
+  background: #e5e5e5;
+  padding: 5px;
+  display: inline-block;
+  /* margin: 0 1%; */
+  margin-left: 10px;
+  box-shadow: 0 0 10px 0 orange;
+}
+footer nav #to-top:hover {
+  background: orange;
 }
