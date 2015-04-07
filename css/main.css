@@ -130,7 +130,7 @@ main.content article img {
 }
 
 main.content article a {
-  background: #eee;
+  background: rgba(238,238,238,0.6);
   box-shadow: 0 0 3px;
   padding: 2px;
   text-decoration: none;
@@ -147,6 +147,13 @@ main.content .link-nav {
 main.content .link-nav li {
   list-style: none;
   margin: 20px 0;
+}
+
+main.content .link-nav li a {
+  background: #eee;
+  box-shadow: 0 0 3px;
+  padding: 2px;
+  text-decoration: none;
 }
 
 main.content .link-nav li a:hover {
@@ -296,6 +303,9 @@ div#text-logo {
   left: 142px;
   font-family: modern-serif;
   font-size: 3em;
+/*  word-wrap: normal;
+  text-align: left;
+  width: 45%; */
 }
 
 div#text-logo-spacer {
