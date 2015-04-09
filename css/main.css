@@ -162,7 +162,7 @@ main.content .link-nav li a:hover {
 }
 
 div#content-container {
-  height: 100%;
+  /* height: 100%; */
 }
 
 /* CODE BOXES */
