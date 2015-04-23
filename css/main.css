@@ -162,6 +162,14 @@ main.content .link-nav li a:hover {
   background: #bbb;
 }
 
+/* CODE INLINE */
+span.code {
+  background: #eee;
+  font-family: courier;
+  margin: 2px;
+  text-align: left;
+}
+
 /* CODE BOXES */
 div.code-insert {
   margin: 20px 10%;
