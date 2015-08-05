@@ -1,3 +1,12 @@
+ul.navbar-nav {
+  margin-left: 1.5%;
+}
+
+.navbar-brand {
+  margin-right: 2%;
+  box-shadow: 0 0 20px;
+}
+
 .jumbotron {
   background: url("../images/ashland_station.jpg") center center;
   background-size: cover;
@@ -8,6 +17,10 @@
 }
 
 .leeway-top {
+}
+
+#credits {
+  color: #eaeaea;
 }
 
 #projects div.jumbotron {
@@ -35,4 +48,5 @@ section {
 
 article {
   margin-left: 9.5%;
+  /* font-size: 16px; */
 }
