@@ -1,0 +1,38 @@
+.jumbotron {
+  background: url("../images/ashland_station.jpg") center center;
+  background-size: cover;
+  color: #fff;
+  width: 80em;
+  /* position: fixed; */
+  border-radius: 0 !important;
+}
+
+.leeway-top {
+}
+
+#projects div.jumbotron {
+  background: url("../images/skate_park.jpg") center center;
+}
+
+#contact div.jumbotron {
+  background: url("../images/from_museum.jpg") center center;
+}
+
+.content {
+  width: 60%;
+  margin: 0em auto;
+  margin-left: 5.5%;
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 50em;
+  background: #eee;
+  padding-right: 9%;
+  padding-bottom: 9%;
+  padding-top: 5em;
+}
+
+article {
+  margin-left: 9.5%;
+}
