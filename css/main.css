@@ -1,5 +1,5 @@
 ul.navbar-nav {
-  margin-left: 8%;
+  margin-left: 1.5%;
 }
 
 .navbar-brand {
@@ -17,6 +17,10 @@ ul.navbar-nav {
 }
 
 .leeway-top {
+}
+
+#credits {
+  color: #eaeaea;
 }
 
 #projects div.jumbotron {
@@ -44,4 +48,5 @@ section {
 
 article {
   margin-left: 9.5%;
+  /* font-size: 16px; */
 }
