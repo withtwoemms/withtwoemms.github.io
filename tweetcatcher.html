@@ -6,6 +6,37 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
   </head>
   <body>
-    This will be the home of the TweetCatcher UI.
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <a href="#tweetcatcher" class="navbar-brand scroll" style="float: right;">TweetCatcher</a>
+      <ul class="nav navbar-nav">
+          <li><a class="scroll" href="#footer" id="credits">Credits</a></li>
+          <li><a href="../index.html#projects" id="back">Back</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <section class="leeway-top" id="tweetcatcher">
+                <div class="jumbotron jumbotron-tail">
+                    <h1>This is TweetCatcher.</h1>
+                </div>
+                <article id="link-loc">
+                    <h3>a tool for capturing Twitter data</h3>
+                    <button id="get-access-tokens">Get Link to Access Pin</button>
+                    ...and wait for the link to appear. When it does, follow it and use the pin at the other end in your command line instance of TweetCatcher (<a href="http://www.github.com/withtwoemms/tweetcatcher">clone here</a>).
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <p class="text-muted">Hand-crafted by me &copy;2015&nbsp; | &nbsp;<em>Radiative Transfer is a thing that happens.</em></p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tweetcatcher.js"></script>
   </body>
 </html>
