@@ -11,6 +11,7 @@
       <ul class="nav navbar-nav">
           <li><a class="scroll" href="#footer" id="credits">Credits</a></li>
           <li><a href="../index.html#projects" id="back">Back</a></li>
+          <li id="api"><a href="#" id="back">GET API</a></li>
       </ul>
     </nav>
     
@@ -26,6 +27,7 @@
                     ...and wait for the link to appear. When it does, follow it and use the pin at the other end in your command line instance of TweetCatcher (<a href="http://www.github.com/withtwoemms/tweetcatcher">clone here</a>).
                 </article>
             </section>
+        <div id="app"></div>
         </div>
     </div>
 
@@ -36,7 +38,39 @@
     </footer>
 
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="index.js"></script>
+    <!--script src="js/react.min.js"></script-->
+    <!--script src="js/react-dom.min.js"></script-->
     <script src="js/main.js"></script>
     <script src="js/tweetcatcher.js"></script>
+    <script type="text/javascript">
+      $('#api').on('click', function(){
+        console.log('api button clicked');
+        $.ajax({
+          method: 'GET',
+          url: 'http://emmanuelobi.com/api'
+        }).done(function(response) {
+          console.log(response);
+
+          /*
+          var React = require('react');
+          var ReactDOM = require('react-dom');
+          ReactDOM.render(
+            <h1>Hello, world!</h1>,
+            document.getElementById('tweetcatcher')
+          );
+          */
+          /*
+          var HelloWorld = React.createClass({
+            render: function() {
+              return(<div>Hello, world!</div>);
+            }
+          });
+
+          React.render(new HelloWorld(), document.body);
+          */
+        });
+      });
+    </script>
   </body>
 </html>
