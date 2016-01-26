@@ -1,5 +1,8 @@
 .archive
-node_modules
+node_modules/
+webpack.config.js
+index.js
+.twitter*
 
 led / optimized / DLL files
 __pycache__/
