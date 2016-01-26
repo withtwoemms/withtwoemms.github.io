@@ -1,6 +1,5 @@
 .archive
 node_modules/
-webpack.config.js
 index.js
 .twitter*
 
