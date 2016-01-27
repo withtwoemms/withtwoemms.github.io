@@ -1,5 +1,7 @@
 .archive
-node_modules
+node_modules/
+index.js
+.twitter*
 
 led / optimized / DLL files
 __pycache__/
