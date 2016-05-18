@@ -1,0 +1,4 @@
+[submodule "blog"]
+    path = blog
+    url = git@github.com-personal:withtwoemms/withtwoemms.github.io-blog.git
+
