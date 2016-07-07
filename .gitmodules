@@ -1,5 +1,5 @@
 [submodule "blog"]
-    path = blog
-    url = https://github.com/withtwoemms/withtwoemms.github.io.git
+	path = blog
+	url = https://github.com/withtwoemms/blog.git
 
 
